@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marygoret Wandela | Machine Learning & Data Science</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f7f9fc;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #d1d5db;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #111827;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #111827;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #e5e7eb;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .project p {
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            background: #111827;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f172a;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Marygoret Wandela</h1>
+        <p>Machine Learning & Data Science Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am an aspiring Machine Learning and Data Science practitioner
+            with hands-on experience building machine learning, natural language
+            processing, and computer vision projects using Python.
+        </p>
+
+        <br>
+
+        <p>
+            I enjoy working with data, developing predictive models, evaluating
+            model performance, and turning machine learning models into practical
+            applications. I am particularly interested in computer vision,
+            applied machine learning, and AI systems that solve real-world problems.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">Pandas</span>
+            <span class="skill">NumPy</span>
+            <span class="skill">Scikit-learn</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">Keras</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Deep Learning</span>
+            <span class="skill">Computer Vision</span>
+            <span class="skill">NLP</span>
+            <span class="skill">Data Analysis</span>
+            <span class="skill">Matplotlib</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">Git & GitHub</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>🍎 NutriLens</h3>
+
+                <p>
+                    A computer vision application that identifies food from
+                    images and provides nutritional information. Built using
+                    TensorFlow/Keras and MobileNetV2 transfer learning.
+                </p>
+
+                <p>
+                    <strong>Current test accuracy: 93%</strong>
+                </p>
+
+                <a href="https://github.com/wandela-ml" target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>📧 Spam/Ham Classifier</h3>
+
+                <p>
+                    An NLP classification system that identifies SMS messages
+                    as spam or legitimate messages using TF-IDF and Logistic
+                    Regression.
+                </p>
+
+                <p>
+                    <strong>Test accuracy: 96%</strong>
+                </p>
+
+                <a href="https://spam-ham-classifier-78ef.onrender.com/"
+                   target="_blank">
+                    Try Live Demo →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>🏠 House Price Prediction</h3>
+
+                <p>
+                    A machine learning regression project focused on predicting
+                    house prices from property-related features.
+                </p>
+
+                <a href="https://github.com/wandela-ml/house_price_prediction"
+                   target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>🎬 Movie Recommendation System</h3>
+
+                <p>
+                    A recommendation system designed to suggest movies based
+                    on user and item relationships.
+                </p>
+
+                <a href="https://github.com/wandela-ml"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>📚 Book Recommendation System</h3>
+
+                <p>
+                    A recommendation system that explores data-driven approaches
+                    for suggesting books to users.
+                </p>
+
+                <a href="https://github.com/wandela-ml"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>🌸 Iris Flower Classification</h3>
+
+                <p>
+                    A foundational supervised machine learning project
+                    demonstrating classification using the Iris dataset.
+                </p>
+
+                <a href="https://github.com/wandela-ml"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+
+        <p>
+            I am interested in entry-level opportunities in Machine Learning,
+            Data Science, and AI.
+        </p>
+
+        <br>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/wandela-ml" target="_blank">
+                github.com/wandela-ml
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/" target="_blank">
+                Connect with me on LinkedIn
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Marygoret Wandela. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
