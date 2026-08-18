@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Marygoret Wandela | Machine Learning & Data Science</title>
+    <title>Marygoret Wandela | Machine Learning & AI</title>
 
     <style>
         * {
@@ -33,8 +33,9 @@
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: #d1d5db;
+            margin-top: 8px;
         }
 
         nav {
@@ -44,6 +45,7 @@
             border-bottom: 1px solid #ddd;
             position: sticky;
             top: 0;
+            z-index: 100;
         }
 
         nav a {
@@ -69,8 +71,17 @@
             color: #111827;
         }
 
+        h3 {
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
         .about {
             background: white;
+        }
+
+        .about p {
+            margin-bottom: 15px;
         }
 
         .skills {
@@ -100,8 +111,7 @@
         }
 
         .project h3 {
-            margin-bottom: 10px;
-            color: #111827;
+            margin-bottom: 12px;
         }
 
         .project p {
@@ -112,10 +122,18 @@
             color: #2563eb;
             text-decoration: none;
             font-weight: bold;
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 5px;
         }
 
         .project a:hover {
             text-decoration: underline;
+        }
+
+        .status {
+            font-size: 0.9rem;
+            color: #555;
         }
 
         .contact {
@@ -128,9 +146,17 @@
             color: white;
         }
 
+        .contact p {
+            margin-bottom: 10px;
+        }
+
         .contact a {
             color: #93c5fd;
             text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -141,12 +167,21 @@
         }
 
         @media (max-width: 600px) {
+
             header h1 {
                 font-size: 2.2rem;
             }
 
+            header p {
+                font-size: 1rem;
+            }
+
             nav a {
                 margin: 0 7px;
+            }
+
+            section {
+                padding: 45px 20px;
             }
         }
     </style>
@@ -154,11 +189,19 @@
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
         <h1>Marygoret Wandela</h1>
         <p>Machine Learning & AI Developer</p>
-        <p>Building practical machine-learning solutions with Python, TensorFlow, and scikit-learn.</p>
+        <p>
+            Building practical machine-learning solutions with Python,
+            TensorFlow, and scikit-learn.
+        </p>
     </header>
+
+
+    <!-- NAVIGATION -->
 
     <nav>
         <a href="#about">About</a>
@@ -167,29 +210,42 @@
         <a href="#contact">Contact</a>
     </nav>
 
+
+    <!-- ABOUT -->
+
     <section id="about" class="about">
+
         <h2>About Me</h2>
 
         <p>
             I am an aspiring Machine Learning and Data Science practitioner
-            with hands-on experience building machine learning, natural language
-            processing, and computer vision projects using Python.
+            with hands-on experience building machine learning, natural
+            language processing, and computer vision projects using Python.
         </p>
-
-        <br>
 
         <p>
-            I enjoy working with data, developing predictive models, evaluating
-            model performance, and turning machine learning models into practical
-            applications. I am particularly interested in computer vision,
-            applied machine learning, and AI systems that solve real-world problems.
+            I enjoy working with data, developing predictive models,
+            evaluating model performance, and turning machine learning
+            models into practical applications.
         </p>
+
+        <p>
+            I am particularly interested in computer vision, applied
+            machine learning, and building AI systems that solve
+            real-world problems.
+        </p>
+
     </section>
 
+
+    <!-- SKILLS -->
+
     <section id="skills">
+
         <h2>Technical Skills</h2>
 
         <div class="skills">
+
             <span class="skill">Python</span>
             <span class="skill">Pandas</span>
             <span class="skill">NumPy</span>
@@ -204,133 +260,229 @@
             <span class="skill">Matplotlib</span>
             <span class="skill">FastAPI</span>
             <span class="skill">Git & GitHub</span>
+
         </div>
+
         <br>
 
-<h3>Currently Exploring</h3>
+        <h3>Currently Exploring</h3>
 
-<div class="skills">
-    <span class="skill">PyTorch</span>
-    <span class="skill">Advanced Deep Learning</span>
-    <span class="skill">Model Experimentation</span>
-</div>
+        <div class="skills">
+
+            <span class="skill">PyTorch</span>
+            <span class="skill">Advanced Deep Learning</span>
+            <span class="skill">Model Experimentation</span>
+
+        </div>
+
     </section>
 
+
+    <!-- PROJECTS -->
+
     <section id="projects">
+
         <h2>Featured Projects</h2>
 
         <div class="projects">
+
+
+            <!-- NUTRILENS -->
+
             <div class="project">
+
                 <h3>🍎 NutriLens</h3>
+
                 <p>
-                    A computer vision application that identifies food from images
-                    and provides nutritional information. Built using TensorFlow/Keras
-                    and MobileNetV2 transfer learning.
+                    A computer vision application that identifies food
+                    from images and provides nutritional information.
+                    Built using TensorFlow/Keras and MobileNetV2
+                    transfer learning.
                 </p>
+
                 <p>
                     <strong>Current test accuracy: 93%</strong>
                 </p>
-                <p><strong>Status:</strong> In development</p>
-            </div>
-            <div class="project">
-                <h3>📧 Spam/Ham Classifier</h3>
-                <p>
-                    An NLP-based SMS spam classification system built using text
-                    preprocessing, TF-IDF vectorization, and Logistic Regression.
+
+                <p class="status">
+                    <strong>Status:</strong> In development
                 </p>
+
+            </div>
+
+
+            <!-- SPAM HAM -->
+
+            <div class="project">
+
+                <h3>📧 Spam/Ham Classifier</h3>
+
+                <p>
+                    An NLP-based SMS spam classification system built
+                    using text preprocessing, TF-IDF vectorization,
+                    and Logistic Regression.
+                </p>
+
                 <p>
                     <strong>Test accuracy: 96%</strong>
                 </p>
+
                 <p>
                     The model was deployed as a FastAPI web application.
                 </p>
-                <a href="https://github.com/wandela-ml/spam-ham-classifier"target="_blank">
+
+                <a
+                    href="https://github.com/wandela-ml/spam-ham-classifier"
+                    target="_blank">
                     View Source →
                 </a>
-                <a href="https://spam-ham-classifier-78ef.onrender.com/"target="_blank">
+
+                <a
+                    href="https://spam-ham-classifier-78ef.onrender.com/"
+                    target="_blank">
                     Try Live Demo →
                 </a>
-            </div>
-            <div class="project">
-                <h3>🏠 House Price Prediction</h3>
-                <p>
-                    A supervised machine learning regression project that predicts
-                    house prices from property features. The project includes data
-                    preprocessing, model training, and evaluation.
-                </p>
-                <a href="https://github.com/wandela-ml/housing-price-prediction"target="_blank">
-                    View Project →
-                </a>
-            </div>
-            <div class="project">
-                <h3>🎬 Movie Recommendation System</h3>
-                <p>
-                    A recommendation system that uses movie-related data to generate
-                    personalized movie suggestions. The project explores data
-                    preprocessing and recommendation techniques.
-                </p>
-                <a href="https://github.com/wandela-ml/movie-recommendation-system"target="_blank">
-                    View Project →
-                </a>
-            </div>
-            <div class="project">
-                <h3>📚 Book Recommendation System</h3>
-                <p>
-                    A recommendation system that explores data-driven approaches
-                    for suggesting books based on available user and book information.
-                </p>
-                <a href="https://github.com/wandela-ml/book_recommender"target="_blank">
-                    View Project →
-                </a>
-            </div>
-            <div class="project">
-                <h3>🌸 Iris Flower Classification</h3>
-                <p>
-                    A foundational supervised machine learning project demonstrating
-                    classification using the Iris dataset.
-                </p>
-                <a href="https://github.com/wandela-ml"target="_blank">
-                    View on GitHub →
-                </a></div>
 
-    </div>
+            </div>
+
+
+            <!-- HOUSE PRICE -->
+
+            <div class="project">
+
+                <h3>🏠 Housing Price Prediction</h3>
+
+                <p>
+                    A supervised machine learning regression project
+                    that predicts house prices from property features.
+                    The project includes data preprocessing, model
+                    training, and evaluation.
+                </p>
+
+                <a
+                    href="https://github.com/wandela-ml/housing-price-prediction"
+                    target="_blank">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <!-- MOVIE RECOMMENDER -->
+
+            <div class="project">
+
+                <h3>🎬 Movie Recommendation System</h3>
+
+                <p>
+                    A recommendation system that uses movie-related
+                    data to generate personalized movie suggestions.
+                    The project explores data preprocessing and
+                    recommendation techniques.
+                </p>
+
+                <p class="status">
+                    <strong>Status:</strong> Repository being updated
+                </p>
+
+            </div>
+
+
+            <!-- BOOK RECOMMENDER -->
+
+            <div class="project">
+
+                <h3>📚 Book Recommendation System</h3>
+
+                <p>
+                    A recommendation system that explores data-driven
+                    approaches for suggesting books based on available
+                    user and book information.
+                </p>
+
+                <a
+                    href="https://github.com/wandela-ml/book_recommender"
+                    target="_blank">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <!-- IRIS -->
+
+            <div class="project">
+
+                <h3>🌸 Iris Flower Classification</h3>
+
+                <p>
+                    A foundational supervised machine learning project
+                    demonstrating classification using the Iris dataset.
+                </p>
+
+                <a
+                    href="https://github.com/wandela-ml"
+                    target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+        </div>
+
     </section>
 
+
+    <!-- CONTACT -->
+
     <section id="contact" class="contact">
-    <h2>Let's Connect</h2>
 
-    <p>
-        I am interested in entry-level opportunities in Machine Learning,
-        Data Science, and AI.
-    </p>
+        <h2>Let's Connect</h2>
 
-    <br>
+        <p>
+            I am interested in entry-level opportunities in
+            Machine Learning, Data Science, and AI.
+        </p>
 
-    <p>
-        Email:
-        <a href="mailto:maryawandela@gmail.com">
-            maryawandela@gmail.com
-        </a>
-    </p>
+        <br>
 
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/marygoret-wandela/"
-           target="_blank">
-            linkedin.com/in/marygoret-wandela
-        </a>
-    </p>
+        <p>
+            Email:
+            <a href="mailto:maryawandela@gmail.com">
+                maryawandela@gmail.com
+            </a>
+        </p>
 
-    <p>
-        GitHub:
-        <a href="https://github.com/wandela-ml"
-           target="_blank">
-            github.com/wandela-ml
-        </a>
-    </p>
-</section>
+        <p>
+            LinkedIn:
+            <a
+                href="https://www.linkedin.com/in/marygoret-wandela/"
+                target="_blank">
+                linkedin.com/in/marygoret-wandela
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a
+                href="https://github.com/wandela-ml"
+                target="_blank">
+                github.com/wandela-ml
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
     <footer>
-        <p>© 2026 Marygoret Wandela. All rights reserved.</p>
+
+        <p>
+            © 2026 Marygoret Wandela. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
