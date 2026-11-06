@@ -69,16 +69,16 @@
         nav a {
             color: #111827;
             text-decoration: none;
-            margin: 0 12px;
+            margin: 0 15px;
             font-weight: bold;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #2563eb;
         }
 
         section {
-            max-width: 1100px;
+            max-width: 1150px;
             margin: auto;
             padding: 60px 20px;
         }
@@ -102,60 +102,44 @@
             margin-bottom: 15px;
         }
 
-        .skills {
+        /* FEATURED PROJECTS */
+
+        .featured-projects {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            flex-direction: column;
+            gap: 30px;
         }
-
-        .skill {
-            background: #e5e7eb;
-            padding: 8px 14px;
-            border-radius: 20px;
-            font-size: 0.95rem;
-        }
-
-        /* Tobhe flagship project */
 
         .featured-project {
-            background: white;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.09);
-            border-top: 5px solid #2563eb;
-        }
-
-        .featured-project h3 {
-            font-size: 1.7rem;
-            margin-bottom: 15px;
-        }
-
-        .featured-project p {
-            margin-bottom: 15px;
-        }
-
-        /* Other current projects */
-
-        .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .project {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+            gap: 30px;
+            align-items: center;
             background: white;
-            padding: 25px;
-            border-radius: 10px;
+            padding: 30px;
+            border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .project p {
+        .featured-content h3 {
+            font-size: 1.5rem;
             margin-bottom: 15px;
         }
 
+        .featured-content p {
+            margin-bottom: 15px;
+        }
+
+        .featured-content ul {
+            margin: 10px 0 18px 20px;
+        }
+
+        .featured-content li {
+            margin-bottom: 7px;
+        }
+
+        .featured-content a,
         .project a,
-        .featured-project a,
         .earlier-project-card a {
             color: #2563eb;
             text-decoration: none;
@@ -165,8 +149,8 @@
             margin-top: 8px;
         }
 
+        .featured-content a:hover,
         .project a:hover,
-        .featured-project a:hover,
         .earlier-project-card a:hover {
             text-decoration: underline;
         }
@@ -190,68 +174,128 @@
             margin-top: 18px;
         }
 
-        /* Architecture diagrams */
+        /* ARCHITECTURE DIAGRAMS */
 
-        .architecture {
-            margin: 25px 0;
-            padding: 22px;
-            background: #f1f5f9;
+        .featured-architecture {
+            background: #f3f6fb;
+            border: 1px solid #e2e8f0;
             border-radius: 10px;
+            padding: 22px;
+            min-width: 0;
         }
 
-        .architecture h4 {
-            margin-bottom: 18px;
+        .featured-architecture h4 {
+            text-align: center;
             color: #111827;
+            margin-bottom: 18px;
             font-size: 1.1rem;
         }
 
         .architecture-flow {
             display: flex;
-            align-items: stretch;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 9px;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
 
         .architecture-node {
-            flex: 1 1 125px;
-            min-width: 115px;
-            padding: 14px 10px;
             background: white;
             border: 1px solid #cbd5e1;
             border-radius: 8px;
+            padding: 12px;
             text-align: center;
-            font-size: 0.9rem;
+            flex: 1 1 115px;
+            min-width: 95px;
+            font-size: 0.85rem;
             font-weight: bold;
             color: #1e293b;
         }
 
-        .architecture-node span {
+        .architecture-node small {
             display: block;
-            margin-top: 6px;
-            font-size: 0.78rem;
             font-weight: normal;
             color: #64748b;
+            margin-top: 5px;
         }
 
         .architecture-arrow {
-            align-self: center;
             color: #2563eb;
-            font-size: 1.4rem;
             font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .architecture-connector {
+            text-align: center;
+            color: #2563eb;
+            font-weight: bold;
+            margin: 12px 0;
         }
 
         .architecture-note {
+            font-size: 0.8rem;
+            color: #64748b;
+            text-align: center;
             margin-top: 15px;
-            color: #475569;
-            font-size: 0.88rem;
         }
 
-        /* GitHub invitation */
+        .architecture-divider {
+            border: none;
+            border-top: 1px solid #dbe3ee;
+            margin: 18px 0;
+        }
+
+        /* OTHER CURRENT PROJECTS */
+
+        .other-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            margin-bottom: 15px;
+        }
+
+        /* WHERE IT STARTED */
+
+        .earlier-projects {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .earlier-project-card {
+            max-width: 650px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 22px;
+        }
+
+        .earlier-project-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .earlier-project-card p {
+            margin-bottom: 15px;
+        }
 
         .github-more {
-            margin-top: 30px;
-            text-align: center;
+            margin-top: 22px;
+            color: #475569;
         }
 
         .github-more a {
@@ -260,19 +304,27 @@
             text-decoration: none;
         }
 
-        /* Earlier project */
+        /* TECHNICAL SKILLS */
 
-        .earlier-projects {
-            background: #eef2f7;
+        .skills-section h3 {
+            margin-top: 25px;
+            margin-bottom: 12px;
         }
 
-        .earlier-project-card {
-            max-width: 750px;
-            background: white;
-            padding: 28px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
+
+        .skill {
+            background: #e5e7eb;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+        }
+
+        /* CONTACT */
 
         .contact {
             background: #111827;
@@ -304,6 +356,18 @@
             color: #cbd5e1;
         }
 
+        /* RESPONSIVE DESIGN */
+
+        @media (max-width: 800px) {
+            .featured-project {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-architecture {
+                width: 100%;
+            }
+        }
+
         @media (max-width: 600px) {
             header {
                 padding: 45px 15px;
@@ -327,8 +391,7 @@
             }
 
             nav a {
-                display: inline-block;
-                margin: 5px 7px;
+                margin: 0 7px;
                 font-size: 0.85rem;
             }
 
@@ -337,26 +400,23 @@
             }
 
             .featured-project {
-                padding: 22px;
+                padding: 20px;
             }
 
-            .architecture {
+            .featured-architecture {
                 padding: 15px;
             }
 
-            .architecture-flow {
-                flex-direction: column;
-                align-items: stretch;
+            .architecture-arrow {
+                display: none;
             }
 
             .architecture-node {
-                width: 100%;
+                flex-basis: 100%;
             }
 
-            .architecture-arrow {
-                transform: rotate(90deg);
-                text-align: center;
-                line-height: 1;
+            .earlier-projects {
+                padding: 20px;
             }
         }
     </style>
@@ -390,9 +450,9 @@
 
     <nav>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#earlier-projects">Earlier Work</a>
+        <a href="#earlier-work">Earlier Work</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -433,237 +493,235 @@
     </section>
 
 
-    <!-- TECHNICAL SKILLS -->
-
-    <section id="skills">
-
-        <h2>Technical Skills</h2>
-
-        <h3>Software Development</h3>
-
-        <div class="skills">
-            <span class="skill">Software Development</span>
-            <span class="skill">Python</span>
-            <span class="skill">Backend Development</span>
-            <span class="skill">REST APIs</span>
-            <span class="skill">API Integration</span>
-            <span class="skill">FastAPI</span>
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">SQLite</span>
-            <span class="skill">Database Management</span>
-            <span class="skill">Web Application Development</span>
-            <span class="skill">Git & GitHub</span>
-            <span class="skill">Application Deployment</span>
-        </div>
-
-        <br>
-
-        <h3>Machine Learning & Data Science</h3>
-
-        <div class="skills">
-            <span class="skill">Machine Learning</span>
-            <span class="skill">Deep Learning</span>
-            <span class="skill">Scikit-learn</span>
-            <span class="skill">TensorFlow</span>
-            <span class="skill">Keras</span>
-            <span class="skill">Pandas</span>
-            <span class="skill">NumPy</span>
-            <span class="skill">Matplotlib</span>
-            <span class="skill">Data Analysis</span>
-            <span class="skill">Computer Vision</span>
-            <span class="skill">NLP</span>
-        </div>
-
-        <br>
-
-        <h3>Artificial Intelligence</h3>
-
-        <div class="skills">
-            <span class="skill">LLM Applications</span>
-            <span class="skill">RAG</span>
-            <span class="skill">Embeddings</span>
-            <span class="skill">Semantic Search</span>
-            <span class="skill">Google Gemini</span>
-            <span class="skill">ChromaDB</span>
-        </div>
-
-        <br>
-
-        <h3>Currently Exploring</h3>
-
-        <div class="skills">
-            <span class="skill">PyTorch</span>
-            <span class="skill">Advanced Deep Learning</span>
-            <span class="skill">Model Experimentation</span>
-            <span class="skill">AI Application Development</span>
-        </div>
-
-    </section>
-
-
     <!-- FEATURED PROJECTS -->
 
     <section id="projects">
 
         <h2>Featured Projects</h2>
 
-
-        <!-- TOBHE: FLAGSHIP PROJECT -->
-
-        <div class="featured-project">
-
-            <h3>🏪 Tobhe – Business Oversight & Self-Service Checkout</h3>
-
-            <p>
-                Tobhe is a Python-based business oversight application
-                designed to help Kenyan businesses manage branch operations,
-                inventory, customer orders, and payments.
-            </p>
-
-            <p>
-                The deployed MVP includes branch operations, inventory
-                management, customer order processing, and payment integration.
-                It uses Safaricom Daraja's M-Pesa Express API to initiate
-                customer payment requests and receive payment callbacks.
-                Callback results are used to update payment and order records.
-            </p>
-
-            <p>
-                The project addresses a practical business challenge:
-                helping owners gain better visibility into their operations
-                while supporting more reliable order and payment management.
-            </p>
-
-            <p class="status">
-                <strong>Status:</strong>
-                <span class="live">MVP Deployed</span>
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                Python, SQLite, JavaScript, HTML, CSS, Safaricom Daraja API.
-            </p>
+        <div class="featured-projects">
 
 
-            <!-- TOBHE ARCHITECTURE -->
+            <!-- TOBHE -->
 
-            <div class="architecture">
+            <article class="featured-project">
 
-                <h4>Tobhe – System Architecture</h4>
+                <div class="featured-content">
 
-                <div class="architecture-flow">
+                    <h3>🏪 Tobhe – Business Oversight Platform</h3>
 
-                    <div class="architecture-node">
-                        User Interfaces
-                        <span>Customer · Employee · Owner</span>
-                    </div>
+                    <p>
+                        Tobhe is a Python-based business oversight application
+                        designed to help Kenyan businesses manage branch
+                        operations, inventory, customer orders, and payments.
+                    </p>
 
-                    <div class="architecture-arrow">→</div>
+                    <p>
+                        The deployed MVP provides branch operations,
+                        inventory management, customer order processing,
+                        and payment integration. It uses Safaricom Daraja's
+                        M-Pesa Express API to initiate customer payment
+                        requests and process payment callbacks.
+                    </p>
 
-                    <div class="architecture-node">
-                        Python Backend
-                        <span>Application routes and API logic</span>
-                    </div>
+                    <p>
+                        The application connects business operations with
+                        payment processing, helping improve visibility
+                        and accountability across business branches.
+                    </p>
 
-                    <div class="architecture-arrow">→</div>
+                    <p class="status">
+                        <strong>Status:</strong>
+                        <span class="live">MVP Deployed</span>
+                    </p>
 
-                    <div class="architecture-node">
-                        Business Logic
-                        <span>Inventory · Orders · Payments</span>
-                    </div>
+                    <p>
+                        <strong>Technologies:</strong>
+                        Python, SQLite, JavaScript, HTML, CSS,
+                        Safaricom Daraja API.
+                    </p>
 
-                    <div class="architecture-arrow">→</div>
+                    <div class="project-links">
 
-                    <div class="architecture-node">
-                        SQLite Database
-                        <span>Business and transaction records</span>
+                        <a
+                            href="https://tobhe.onrender.com/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Try Live Demo →
+                        </a>
+
+                        <a
+                            href="https://github.com/wandela-ml/Tobhe"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub Repository →
+                        </a>
+
                     </div>
 
                 </div>
 
-                <div class="architecture-flow" style="margin-top: 18px;">
 
-                    <div class="architecture-node">
-                        Python Backend
-                        <span>Initiates M-Pesa payment request</span>
+                <!-- TOBHE ARCHITECTURE -->
+
+                <div class="featured-architecture">
+
+                    <h4>Tobhe – System Architecture</h4>
+
+                    <div class="architecture-flow">
+
+                        <div class="architecture-node">
+                            Customer Interface
+                            <small>Customer orders</small>
+                        </div>
+
+                        <div class="architecture-node">
+                            Employee Interface
+                            <small>Daily operations</small>
+                        </div>
+
+                        <div class="architecture-node">
+                            Owner Interface
+                            <small>Business oversight</small>
+                        </div>
+
                     </div>
 
-                    <div class="architecture-arrow">↔</div>
-
-                    <div class="architecture-node">
-                        Safaricom Daraja API
-                        <span>M-Pesa Express and payment callback</span>
+                    <div class="architecture-connector">
+                        ↓
                     </div>
 
-                    <div class="architecture-arrow">→</div>
+                    <div class="architecture-flow">
 
-                    <div class="architecture-node">
-                        Payment Update
-                        <span>Updates payment and order status</span>
+                        <div class="architecture-node">
+                            Python Backend
+                            <small>Application routes and APIs</small>
+                        </div>
+
                     </div>
+
+                    <div class="architecture-connector">
+                        ↓
+                    </div>
+
+                    <div class="architecture-flow">
+
+                        <div class="architecture-node">
+                            Business Logic
+                            <small>Inventory, orders and payments</small>
+                        </div>
+
+                    </div>
+
+                    <div class="architecture-connector">
+                        ↓
+                    </div>
+
+                    <div class="architecture-flow">
+
+                        <div class="architecture-node">
+                            SQLite Database
+                            <small>Business and transaction records</small>
+                        </div>
+
+                    </div>
+
+                    <hr class="architecture-divider">
+
+                    <div class="architecture-flow">
+
+                        <div class="architecture-node">
+                            Python Backend
+                            <small>Payment request</small>
+                        </div>
+
+                        <span class="architecture-arrow">↔</span>
+
+                        <div class="architecture-node">
+                            Safaricom Daraja API
+                            <small>M-Pesa Express and callbacks</small>
+                        </div>
+
+                    </div>
+
+                    <div class="architecture-connector">
+                        ↓
+                    </div>
+
+                    <div class="architecture-flow">
+
+                        <div class="architecture-node">
+                            Payment Status Update
+                            <small>Payment and order records updated</small>
+                        </div>
+
+                    </div>
+
+                    <p class="architecture-note">
+                        Simplified architecture of the deployed MVP.
+                    </p>
 
                 </div>
 
-                <p class="architecture-note">
-                    The diagram highlights the main application components
-                    and the M-Pesa payment callback flow implemented in the MVP.
-                </p>
-
-            </div>
-
-
-            <div class="project-links">
-
-                <a
-                    href="https://tobhe.onrender.com/"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Try Live Demo →
-                </a>
-
-                <a
-                    href="https://github.com/wandela-ml/Tobhe"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub Repository →
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- OTHER CURRENT PROJECTS -->
-
-        <div class="project-grid">
+            </article>
 
 
             <!-- NAFULEARN -->
 
-            <div class="project">
+            <article class="featured-project">
 
-                <h3>🎓 NafuLearn</h3>
+                <div class="featured-content">
 
-                <p>
-                    An AI-powered learning platform designed around Kenya's
-                    Competency-Based Curriculum (CBC), currently focused on
-                    Grade 10 Computer Studies.
-                </p>
+                    <h3>🎓 NafuLearn – AI-Powered CBC Learning</h3>
 
-                <p>
-                    The project combines curriculum content, document chunking,
-                    Gemini embeddings, semantic retrieval, and
-                    Retrieval-Augmented Generation (RAG) to support learning
-                    explanations, student practice, answer evaluation,
-                    feedback, and retry functionality.
-                </p>
+                    <p>
+                        NafuLearn is an AI-powered learning platform
+                        designed around Kenya's Competency-Based Curriculum
+                        (CBC), currently focused on Grade 10 Computer Studies.
+                    </p>
+
+                    <p>
+                        The project uses curriculum-based learning materials,
+                        document chunking, Gemini embeddings, and semantic
+                        retrieval to provide relevant learning context
+                        for AI-generated explanations.
+                    </p>
+
+                    <p>
+                        Its development direction includes Retrieval-Augmented
+                        Generation (RAG), student answer evaluation,
+                        personalised feedback, retry functionality,
+                        and interactive Learn Mode.
+                    </p>
+
+                    <p class="status">
+                        <strong>Status:</strong>
+                        <span class="development">In Development</span>
+                    </p>
+
+                    <p>
+                        <strong>Technologies:</strong>
+                        Python, FastAPI, Google Gemini, ChromaDB,
+                        Embeddings, RAG.
+                    </p>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/wandela-ml/NafuLearn"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub Repository →
+                        </a>
+
+                    </div>
+
+                </div>
 
 
                 <!-- NAFULEARN ARCHITECTURE -->
 
-                <div class="architecture">
+                <div class="featured-architecture">
 
                     <h4>NafuLearn – RAG Architecture</h4>
 
@@ -671,87 +729,114 @@
 
                         <div class="architecture-node">
                             Student
-                            <span>Question or learning request</span>
-                        </div>
-
-                        <div class="architecture-arrow">→</div>
-
-                        <div class="architecture-node">
-                            FastAPI Backend
-                            <span>Receives and processes request</span>
-                        </div>
-
-                        <div class="architecture-arrow">→</div>
-
-                        <div class="architecture-node">
-                            Gemini Embeddings
-                            <span>Converts query into a vector</span>
-                        </div>
-
-                        <div class="architecture-arrow">→</div>
-
-                        <div class="architecture-node">
-                            ChromaDB
-                            <span>Retrieves relevant curriculum content</span>
+                            <small>Learning question or request</small>
                         </div>
 
                     </div>
 
-                    <div class="architecture-flow" style="margin-top: 15px;">
+                    <div class="architecture-connector">
+                        ↓
+                    </div>
+
+                    <div class="architecture-flow">
 
                         <div class="architecture-node">
-                            Retrieved Context
-                            <span>Relevant learning material</span>
+                            FastAPI Backend
+                            <small>Receives and processes requests</small>
                         </div>
 
-                        <div class="architecture-arrow">→</div>
+                    </div>
+
+                    <div class="architecture-connector">
+                        ↓
+                    </div>
+
+                    <div class="architecture-flow">
+
+                        <div class="architecture-node">
+                            Gemini Embeddings
+                            <small>Converts query into a vector</small>
+                        </div>
+
+                        <span class="architecture-arrow">→</span>
+
+                        <div class="architecture-node">
+                            ChromaDB
+                            <small>Semantic curriculum retrieval</small>
+                        </div>
+
+                    </div>
+
+                    <div class="architecture-connector">
+                        ↓
+                    </div>
+
+                    <div class="architecture-flow">
+
+                        <div class="architecture-node">
+                            Retrieved Curriculum Context
+                            <small>Relevant learning materials</small>
+                        </div>
+
+                    </div>
+
+                    <div class="architecture-connector">
+                        ↓
+                    </div>
+
+                    <div class="architecture-flow">
 
                         <div class="architecture-node">
                             Gemini LLM
-                            <span>Generates a grounded response</span>
+                            <small>Generates contextual responses</small>
                         </div>
 
-                        <div class="architecture-arrow">→</div>
+                    </div>
+
+                    <div class="architecture-connector">
+                        ↓
+                    </div>
+
+                    <div class="architecture-flow">
 
                         <div class="architecture-node">
-                            Student
-                            <span>Explanation and learning feedback</span>
+                            Student Learning Experience
+                            <small>Explanations, feedback and guidance</small>
                         </div>
 
                     </div>
 
                     <p class="architecture-note">
-                        This diagram illustrates the RAG workflow used in
-                        the project. NafuLearn is currently in development.
+                        Planned and developing RAG workflow.
                     </p>
 
                 </div>
 
+            </article>
 
-                <p class="status">
-                    <strong>Status:</strong>
-                    <span class="development">In Development</span>
-                </p>
+        </div>
 
-                <a
-                    href="https://github.com/wandela-ml/NafuLearn"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub Repository →
-                </a>
+    </section>
 
-            </div>
+
+    <!-- OTHER CURRENT PROJECTS -->
+
+    <section>
+
+        <h2>Other Current Projects</h2>
+
+        <div class="other-projects">
 
 
             <!-- NUTRILENS -->
 
-            <div class="project">
+            <article class="project">
 
                 <h3>🍎 NutriLens</h3>
 
                 <p>
-                    A computer vision application that identifies food
-                    from images and provides nutritional information.
+                    A computer vision application that identifies
+                    food images and provides nutritional information.
                     Built using TensorFlow/Keras and MobileNetV2
                     transfer learning.
                 </p>
@@ -769,7 +854,7 @@
                     href="https://github.com/wandela-ml/NutriLens"
                     target="_blank"
                     rel="noopener noreferrer">
-                    GitHub Repository →
+                    View Source →
                 </a>
 
                 <a
@@ -779,12 +864,12 @@
                     Try Live Demo →
                 </a>
 
-            </div>
+            </article>
 
 
-            <!-- SPAM/HAM CLASSIFIER -->
+            <!-- SPAM HAM CLASSIFIER -->
 
-            <div class="project">
+            <article class="project">
 
                 <h3>📧 Spam/Ham Classifier</h3>
 
@@ -799,19 +884,14 @@
                 </p>
 
                 <p>
-                    The model is deployed as a FastAPI web application.
-                </p>
-
-                <p class="status">
-                    <strong>Status:</strong>
-                    <span class="live">Live & Deployed</span>
+                    The model was deployed as a FastAPI web application.
                 </p>
 
                 <a
                     href="https://github.com/wandela-ml/spam-ham-classifier"
                     target="_blank"
                     rel="noopener noreferrer">
-                    GitHub Repository →
+                    View Source →
                 </a>
 
                 <a
@@ -821,54 +901,56 @@
                     Try Live Demo →
                 </a>
 
-            </div>
+            </article>
 
         </div>
 
-
-        <!-- GITHUB LINK FOR ADDITIONAL PROJECTS -->
-
-        <div class="github-more">
-
-            <p>
-                Interested in exploring more of my work?
-                Visit
-                <a
-                    href="https://github.com/wandela-ml"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    my GitHub profile
-                </a>
-                to discover additional projects and repositories.
-            </p>
-
-        </div>
+        <p class="github-more">
+            Explore more experiments and projects on my
+            <a
+                href="https://github.com/wandela-ml"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHub profile
+            </a>.
+        </p>
 
     </section>
 
 
-    <!-- EARLIER PROJECTS -->
+    <!-- WHERE IT STARTED -->
 
-    <section id="earlier-projects" class="earlier-projects">
+    <section id="earlier-work">
 
         <h2>Where It Started</h2>
 
-        <div class="earlier-project-card">
+        <div class="earlier-projects">
 
-            <h3>🍉 Healthy Fruits</h3>
+            <article class="earlier-project-card">
 
-            <p>
-                One of my earliest web development projects: a fruit-business
-                website concept featuring product listings, a shopping cart
-                interface, business information, and contact details.
-            </p>
+                <h3>🍉 Healthy Fruits</h3>
 
-            <p>
-                Healthy Fruits represents an early step in my journey
-                into software development and building web applications.
-            </p>
+                <p>
+                    One of my earlier web development projects:
+                    a frontend e-commerce website concept for a fruit
+                    business.
+                </p>
 
-            <div class="project-links">
+                <p>
+                    It introduced me to building web pages, displaying
+                    products, creating a shopping cart interface,
+                    and organising business information for customers.
+                </p>
+
+                <p>
+                    The project includes product listings, an About Us
+                    section, contact information, and a payment-on-delivery
+                    concept.
+                </p>
+
+                <p class="status">
+                    <strong>Role:</strong> Frontend Web Development
+                </p>
 
                 <a
                     href="https://wandela-ml.github.io/hfruits.com/"
@@ -884,7 +966,81 @@
                     GitHub Repository →
                 </a>
 
-            </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+
+    <section id="skills" class="skills-section">
+
+        <h2>Technical Skills</h2>
+
+        <h3>Software Development</h3>
+
+        <div class="skills">
+
+            <span class="skill">Python</span>
+            <span class="skill">Backend Development</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">API Integration</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">SQLite</span>
+            <span class="skill">Database Management</span>
+            <span class="skill">Web Application Development</span>
+            <span class="skill">Git & GitHub</span>
+            <span class="skill">Application Deployment</span>
+
+        </div>
+
+
+        <h3>Machine Learning & Data Science</h3>
+
+        <div class="skills">
+
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Deep Learning</span>
+            <span class="skill">Scikit-learn</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">Keras</span>
+            <span class="skill">Pandas</span>
+            <span class="skill">NumPy</span>
+            <span class="skill">Matplotlib</span>
+            <span class="skill">Data Analysis</span>
+            <span class="skill">Computer Vision</span>
+            <span class="skill">NLP</span>
+
+        </div>
+
+
+        <h3>Artificial Intelligence</h3>
+
+        <div class="skills">
+
+            <span class="skill">LLM Applications</span>
+            <span class="skill">RAG</span>
+            <span class="skill">Embeddings</span>
+            <span class="skill">Semantic Search</span>
+            <span class="skill">Google Gemini</span>
+            <span class="skill">ChromaDB</span>
+
+        </div>
+
+
+        <h3>Currently Exploring</h3>
+
+        <div class="skills">
+
+            <span class="skill">PyTorch</span>
+            <span class="skill">Advanced Deep Learning</span>
+            <span class="skill">Model Experimentation</span>
+            <span class="skill">AI Application Development</span>
 
         </div>
 
